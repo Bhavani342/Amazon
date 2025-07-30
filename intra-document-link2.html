@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin-right: 40px;
+        }
+        header {
+            text-align: center;
+        }
+        .card {
+            width: 300px;
+            border:2px solid black;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+            grid-gap: 40px;
+            margin: 30px;
+        }
+        .buttons {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+        section {
+            display: flex;
+        }
+        .card-img {
+            width: 100px;
+            height: 100px;
+        }
+        .card:target {
+            background-color: black;
+            color:white;
+            box-shadow: 20px 20px 2px gray;
+            width: 350px;
+            font-size: 40px;
+            border-radius: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <h2>Popular Artists</h2>
+        <nav>
+            <a href="#pritam"><img src="./images/pritam.jpg"></a>
+            <a href="#rahman"><img src="./images/rahman.jpg"></a>
+            <a href="#arijit"><img src="./images/arijit.jpg"></a>
+        </nav>
+    </header>
+    <section>
+        <div class="card" id="pritam">
+            <div>
+                <img src="./images/pritam.jpg" class="card-img">
+            </div>
+            <div class="buttons">
+                <span class="bi bi-play"></span>
+                <span class="bi bi-pause"></span>
+                <span class="bi bi-stop"></span>
+            </div>
+        </div>
+        <div class="card" id="rahman">
+            <div>
+                <img src="./images/rahman.jpg" class="card-img">
+            </div>
+            <div class="buttons">
+                <span class="bi bi-play"></span>
+                <span class="bi bi-pause"></span>
+                <span class="bi bi-stop"></span>
+            </div>
+        </div>
+        <div class="card" id="arijit">
+            <div>
+                <img src="./images/arijit.jpg" class="card-img">
+            </div>
+            <div class="buttons">
+                <span class="bi bi-play"></span>
+                <span class="bi bi-pause"></span>
+                <span class="bi bi-stop"></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
